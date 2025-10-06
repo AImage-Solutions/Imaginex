@@ -1,0 +1,8 @@
+{
+  "name": "Imaginex",
+  "description": "Imaginex is your all-in-one AI creative studio. Generate stunning images, dynamic videos, unique avatars, and high-impact ads—powered by next-gen AI. Transform ideas into reality with limitless creativity in just a few clicks.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ]
+}

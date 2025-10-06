@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='100%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' style='stop-color:%2360a5fa;' /%3E%3Cstop offset='50%25' style='stop-color:%23a855f7;' /%3E%3Cstop offset='100%25' style='stop-color:%23c4b5fd;' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cg%3E%3Cpath d='M 4,4 C 12,12 12,12 20,20' stroke='url(%23g)' stroke-width='3' stroke-linecap='round' fill='none' /%3E%3Cpath d='M 4,20 C 12,12 12,12 20,4' stroke='url(%23g)' stroke-width='3' stroke-linecap='round' fill='none' /%3E%3C/g%3E%3C/svg%3E" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imaginex</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Imaginex is your all-in-one AI creative studio. Generate stunning images, dynamic videos, unique avatars, and high-impact ads—powered by next-gen AI. Transform ideas into reality with limitless creativity in just a few clicks." />
+    <meta name="keywords" content="Imaginex AI, AI creative studio, AI image generator, AI video generator, AI ad creator, UGC ads generator, AI avatars, AI prompt generator, AI product photoshoot, AI video scriptwriter, Creative AI tools, All-in-one AI suite" />
+    <meta name="author" content="Imaginex" />
+    <!-- IMPORTANT: Replace https://your-domain.com with your actual website domain -->
+    <link rel="canonical" href="https://your-domain.com" />
+    
+    <!-- Google AdSense Readiness -->
+    <!-- IMPORTANT: Replace ca-pub-XXXXXXXXXXXXXXXX with your AdSense Publisher ID for site verification -->
+    <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXXXXXXXX">
+    <!-- IMPORTANT: After AdSense approval, replace ca-pub-XXXXXXXXXXXXXXXX with your Publisher ID in the script below -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <!-- IMPORTANT: Replace https://your-domain.com with your actual website domain -->
+    <meta property="og:url" content="https://your-domain.com" />
+    <meta property="og:title" content="Imaginex" />
+    <meta property="og:description" content="Imaginex is your all-in-one AI creative studio. Generate stunning images, dynamic videos, unique avatars, and high-impact ads—powered by next-gen AI." />
+    <!-- IMPORTANT: Replace with a full, absolute URL to a preview image (e.g., https://your-domain.com/og-image.jpg) -->
+    <meta property="og:image" content="https://your-domain.com/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <!-- IMPORTANT: Replace https://your-domain.com with your actual website domain -->
+    <meta property="twitter:url" content="https://your-domain.com" />
+    <meta property="twitter:title" content="Imaginex" />
+    <meta property="twitter:description" content="Imaginex is your all-in-one AI creative studio. Generate stunning images, dynamic videos, unique avatars, and high-impact ads—powered by next-gen AI." />
+    <!-- IMPORTANT: Replace with a full, absolute URL to a preview image (e.g., https://your-domain.com/twitter-image.jpg) -->
+    <meta property="twitter:image" content="https://your-domain.com/twitter-image.jpg" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg-color: #f0f4ff;
+        --text-color: #1a202c;
+        --text-muted-color: #5a677d;
+        --primary-color: #0077ff;
+        --secondary-color: #e6007e;
+        --glass-bg: radial-gradient(ellipse at top left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+        --glass-border: rgba(255, 255, 255, 0.8);
+        --glow-shadow: 0 10px 30px -5px rgba(0, 119, 255, 0.2);
+        --glow-shadow-hover: 0 15px 40px -5px rgba(0, 119, 255, 0.3);
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+        overflow-x: hidden;
+      }
+      .font-orbitron {
+        font-family: 'Orbitron', sans-serif;
+      }
+      .glass-card {
+        background: var(--glass-bg);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid var(--glass-border);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+        transition: background 0.3s, border 0.3s, box-shadow 0.3s, transform 0.3s;
+      }
+      .glass-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--glow-shadow-hover);
+        border: 1px solid rgba(0, 119, 255, 0.4);
+      }
+      .text-primary {
+        color: var(--primary-color);
+      }
+      .text-secondary {
+        color: var(--secondary-color);
+      }
+      .prose p { margin-bottom: 1em; }
+      .prose h2 { margin-top: 1.5em; margin-bottom: 0.5em; }
+      .prose h3 { margin-top: 1.2em; margin-bottom: 0.4em; }
+      .prose ul { list-style-type: disc; padding-left: 1.5em; }
+      
+      @keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
+      .animate-fade-in { animation: fade-in 0.6s ease-out forwards; }
+
+      @keyframes fade-in-down { 0% { opacity: 0; transform: translateY(-20px); } 100% { opacity: 1; transform: translateY(0); } }
+      .animate-fade-in-down { animation: fade-in-down 0.6s ease-out forwards; }
+
+      @keyframes fade-in-up { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } }
+      .animate-fade-in-up { animation: fade-in-up 0.6s ease-out forwards; }
+
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-15px); }
+        100% { transform: translateY(0px); }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.20.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
